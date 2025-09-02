@@ -11,12 +11,12 @@
     "sync-api-docs"
   ],
   "scripts": {
-    "update-lock": "yarn dedupe",
-    "docusaurus": "yarn --cwd website docusaurus",
-    "start": "yarn --cwd website start",
-    "build": "yarn --cwd website build",
-    "build:fast": "yarn --cwd website build:fast",
-    "serve": "yarn --cwd website serve",
+    "update-lock": "npm dedupe",
+    "docusaurus": "npm run -w website docusaurus",
+    "start": "npm run -w website start",
+    "build": "npm run -w website build",
+    "build:fast": "npm run -w website build:fast",
+    "serve": "npm run -w website serve",
     "prepare": "husky",
     "check-dependencies": "manypkg check"
   },
@@ -34,6 +34,5 @@
   },
   "resolutions": {
     "@typescript-eslint/typescript-estree": "8.39.1"
-  },
-  "packageManager": "yarn@4.9.2"
+  }
 }
